@@ -3,8 +3,8 @@ import { Home, Book} from "lucide-react";
 import { Send } from 'lucide-react';
 
 const icons = [
-  { name: "Home", icon: <Home strokeWidth={1.5} />, href: "#" },
-  { name: "Send", icon: <Send strokeWidth={1.5} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
+  {icon: <Home strokeWidth={1.5} />, href: "#" },
+  {icon: <Send strokeWidth={1.5} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
 
 ];
 
@@ -31,12 +31,9 @@ export default function Navbar() {
         <a
           key={idx}
           href={item.href}
-          className="group relative flex items-center justify-center m-1 p-3 rounded-full transition-all duration-300 hover:scale-125 hover:bg-white/20"
+          className="group relative flex items-center justify-center m-1 p-1.75 rounded-full transition-all duration-200 hover:scale-115 hover:bg-white/20"
         >
-          <div className="text-black group-hover:text-white">{item.icon}</div>
-          <span className="absolute -top-6 text-white text-xs rounded px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-            {item.name}
-          </span>
+          <div className="text-black">{item.icon}</div>
         </a>
       ))}
     </div>

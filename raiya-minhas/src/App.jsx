@@ -7,19 +7,15 @@ import Hero from "./sections/Hero";
 
 function App() {
   return (
-   <div>
-      
-      <Navbar></Navbar>
-    
-    <section id="hero"> 
-      <Hero/> 
-    </section>
-    
-    <section id="about">
-        <About/>
-    
-    </section>
-  </div>
+    <div className="min-h-screen bg-white">
+      <Navbar />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+    </div>
   );
 }
 
