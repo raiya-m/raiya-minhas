@@ -1,8 +1,8 @@
 import React from "react";
-import { X, Minus, Plus, Folder } from "lucide-react";
+import { X, Minus, Plus } from "lucide-react";
 
-function Hero() {
-  return (
+function Aboutheader () {
+    return (
     <div className="h-screen flex items-center justify-center">
       {/* Terminal Window */}
       <div className="w-[90vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
@@ -21,23 +21,12 @@ function Hero() {
             </div>
           </div>
 
-          {/* Folder icon (white colored only) + folder name */}
-          <div className="flex items-center space-x-2 text-black text-sm font-medium">
-          <Folder size={14} className="stroke-black" />
-            <span>raiya-minhas</span>
-          </div>
-
           <div className="w-6" /> {/* Spacer */}
         </div>
 
         {/* Terminal Content */}
         <div className="px-6 py-4 font-mono text-black text-sm whitespace-pre-wrap text-left">
-{`┌─[raiya@dev-machine] - [~/home]
-└─$ ./start.sh
-
-> Hello, World! I am Raiya.
-> Toronto, ON
-> Computer Engineering @ University of Waterloo`}
+{`About Me`}
           <span className="ml-1 bg-black w-[6px] h-[1em] inline-block animate-blink align-middle" />
         </div>
       </div>
@@ -58,4 +47,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Aboutheader;

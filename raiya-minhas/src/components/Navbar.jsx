@@ -1,11 +1,16 @@
 import { useEffect, useState } from "react";
-import { Home, Book} from "lucide-react";
-import { Send } from 'lucide-react';
+import { Home, Send } from "lucide-react";
 
 const icons = [
-  {icon: <Home strokeWidth={1.5} />, href: "#" },
-  {icon: <Send strokeWidth={1.5} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
+  { icon: <Home strokeWidth={1.25} />, href: "#hero" },
+  { icon: <Send strokeWidth={1.25} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
+];
 
+const navLinks = [
+  { label: "about", href: "#about" },
+  { label: "skills", href: "#skills" },
+  { label: "projects", href: "#projects" },
+  { label: "blog", href: "#blog" },
 ];
 
 export default function Navbar() {
@@ -21,22 +26,41 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-50 transition-all duration-300 ${
-        isScrolled
-          ? "top-1/2 -translate-y-1/2 left-4 flex-col h-[420px] w-16"
-          : "top-4 left-1/2 -translate-x-1/2 flex-row w-fit px-4 h-13.5"
-      } flex items-center justify-between bg-gradient-to-r from-orange-200 via-pink-300 to-blue-300 rounded-full shadow-xl`}
+      className={`fixed z-50 transition-all duration-300 flex shadow-xl rounded-full
+        ${
+          isScrolled
+            ? "top-1/2 transform-none left-4 flex-col items-center py-3 px-2 gap-3 w-14 bg-gradient-to-b from-orange-200 via-pink-300 to-blue-300"
+            : "top-4 left-1/2 -translate-x-1/2 flex-row items-center px-6 py-2 gap-4 bg-gradient-to-r from-orange-200 via-pink-300 to-blue-300"
+        }`}
     >
+      {/* Icon Buttons */}
       {icons.map((item, idx) => (
         <a
           key={idx}
           href={item.href}
-          className="group relative flex items-center justify-center m-1 p-1.75 rounded-full transition-all duration-200 hover:scale-115 hover:bg-white/20"
+          className="group relative flex items-center justify-center p-2 rounded-full transition-all duration-200 hover:scale-110 hover:bg-white/20"
         >
           <div className="text-black">{item.icon}</div>
         </a>
       ))}
+
+      {/* Text Links (horizontal only) */}
+      {!isScrolled && (
+        <div className="ml-4 flex gap-2 font-medium text-sm">
+          {navLinks.map((link, idx) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-black visited:text-black hover:text-black focus:text-black active:text-black no-underline hover:underline transition-colors duration-150"
+            >
+              {link.label}
+              {idx < navLinks.length - 1 && (
+                <span className="mx-2 text-black">/</span>
+              )}
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
-
