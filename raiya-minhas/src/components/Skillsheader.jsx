@@ -1,7 +1,7 @@
 import React from "react";
 import { X, Minus, Plus } from "lucide-react";
 
-function Aboutheader() {
+function Skillsheader() {
   return (
     <div className="w-[90vw] max-w-2xl rounded-md shadow-md border border-black bg-white">
       <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-orange-200 via-pink-300 to-blue-300">
@@ -20,7 +20,7 @@ function Aboutheader() {
       </div>
 
       <div className="px-6 py-3 font-mono text-black text-sm whitespace-pre-wrap text-left">
-        {`About Me`}
+        {`My Technical Skills`}
         <span className="ml-1 bg-black w-[6px] h-[1em] inline-block animate-blink align-middle" />
       </div>
 
@@ -39,4 +39,4 @@ function Aboutheader() {
   );
 }
 
-export default Aboutheader;
+export default Skillsheader;
