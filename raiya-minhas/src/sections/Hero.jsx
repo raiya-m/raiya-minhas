@@ -52,7 +52,7 @@ function Hero() {
 
       {/* Bouncing Chevron (visible only when not scrolled) */}
       {showChevron && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce">
           <ChevronDown size={28} strokeWidth={1.5} />
         </div>
       )}

@@ -2,11 +2,30 @@ import { useEffect, useState } from "react";
 import { Home, Send } from "lucide-react";
 
 const icons = [
-  { icon: <Home strokeWidth={1.25} />, href: "#hero" },
-  { icon: <Send strokeWidth={1.25} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
-  { icon: <img src="github.png"/>, href: "https://github.com/raiya-m"},
-  { icon: <img src="linkedin.png"/>, href: "https://www.linkedin.com/in/raiyaminhas"},
-
+  { icon: <Home className="h-[22px] w-[22px] object-contain" strokeWidth={1.75} />, href: "#hero" },
+  { icon: <Send className="h-[22px] w-[22px] object-contain" strokeWidth={1.75} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
+  {
+    icon: (
+      <img
+        src="github.png"
+        alt="GitHub"
+        className="w-[24px] h-[24px] object-contain"
+      />
+    ),
+    href: "https://github.com/raiya-m",
+    external: true,
+  },
+  {
+    icon: (
+      <img
+        src="linkedin.png"
+        alt="LinkedIn"
+        className="w-[24px] h-[24px] object-contain"
+      />
+    ),
+    href: "https://www.linkedin.com/in/raiyaminhas",
+    external: true,
+  },
 ];
 
 const navLinks = [
@@ -29,25 +48,29 @@ export default function Navbar() {
 
   return (
     <div
-      className={`fixed z-50 transition-all duration-300 flex shadow-xl rounded-full
+      className={`fixed z-50 flex rounded-full shadow-xl
+        transition-[top,left,transform] duration-320 ease-in-out
+        bg-gradient-to-b from-orange-200 via-pink-300 to-blue-300
         ${
           isScrolled
-            ? "top-[calc(50vh-58px)] left-4 flex-col items-center py-3 px-2 gap-3 w-14 bg-gradient-to-b from-orange-200 via-pink-300 to-blue-300"
-            : "top-4 left-1/2 -translate-x-1/2 flex-row items-center px-6 py-2 gap-4 bg-gradient-to-r from-orange-200 via-pink-300 to-blue-300"
+            ? "flex-col items-center gap-3 p-2 w-14 left-4 top-1/2 -translate-y-1/2 translate-x-0"
+            : "flex-row items-center gap-1 px-6 py-2 left-1/2 top-4 -translate-x-1/2 translate-y-0 bg-gradient-to-r"
         }`}
     >
-      {/* Icon Buttons */}
       {icons.map((item, idx) => (
         <a
           key={idx}
           href={item.href}
-          className="group relative flex items-center justify-center p-2 rounded-full transition-all duration-200 hover:scale-110 hover:bg-white/20"
+          target={item.external ? "_blank" : undefined}
+          rel={item.external ? "noopener noreferrer" : undefined}
+          className={`group relative flex items-center justify-center p-1 rounded-full transition-transform duration-150 hover:scale-110 hover:bg-white/20 ${
+            idx === 1 ? "-ml-1" : ""
+          }`}
         >
           <div className="text-black">{item.icon}</div>
         </a>
       ))}
 
-      {/* Text Links (horizontal only) */}
       {!isScrolled && (
         <div className="ml-4 flex gap-2 text-black font-medium text-sm">
           {navLinks.map((link, idx) => (
