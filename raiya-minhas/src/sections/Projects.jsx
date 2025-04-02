@@ -1,42 +1,43 @@
 import React from "react";
 import Projectsheader from "../components/Projectsheader";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: "Inventory Tracker",
-    tags: ["React", "Firebase", "Tailwind"],
-    description: "Built a web app to track medical inventory usage in real time, syncing across users and devices.",
-    github: "https://github.com/yourusername/inventory-tracker"
+    title: "Math Agent",
+    tags: ["JavaScript", "React.js", "OCR", "OpenAI API", "LaTeX"],
+    description: "Designed and built a comprehensive web app to provide custom step-by-step solutions and learning reinforcement to handwritten math problems. Demoed app in 3 Toronto elementary schools, iterating features based on student feedback gathered during classroom sessions.",
+    github: "https://github.com/raiya-m/math-agent"
   },
   {
-    title: "AutoGrader",
-    tags: ["Python", "Flask", "CI/CD"],
-    description: "A script-based grading system for engineering assignments that handles edge case detection.",
-    github: "https://github.com/yourusername/autograder"
+    title: "Wallet Shield",
+    tags: ["Python", "Flask-CORS", "Google Gemini API", "Solidity", "Chart.js", "React.js"],
+    description: "Web app for detecting fraud in students' crypto wallets. Creates an easy-to-understand report, using anomaly detection via Isolation Forest to highlight potential risk, and provides an interactive visual summary chart. Sensitive financial data is stored securely and immutably on blockchain.",
+    github: "https://github.com/raiya-m/wallet-shield"
   },
   {
-    title: "GeoTrivia",
-    tags: ["Next.js", "Trivia API", "Framer Motion"],
-    description: "A fast-paced trivia game that pulls from global geography databases with smooth animations.",
-    github: "https://github.com/yourusername/geotrivia"
+    title: "Heatstroke Detection Wearable",
+    tags: ["C++", "STM32 Microcontroller", "Blender"],
+    description: "Wearable device that integrates temperature sensors with a microcontroller to continuously detect, log, and evaluate body heat levels in real time, enabling threshold-based alerts. Designed for farmers in Latin America.",
+    github: "https://github.com/anusha-saxena/HeatMonitoringSystem"
   },
   {
-    title: "CircuitSim",
-    tags: ["C++", "SFML", "Simulation"],
-    description: "Simulates digital circuits using a custom-built logic gate engine and GUI.",
-    github: "https://github.com/yourusername/circuitsim"
+    title: "Brain SPICE",
+    tags: ["Python", "Ngspice", "Tkinter", "Matplotlib", "Numpy", "pandas"],
+    description: "Real-time circuit simulator with an interactive GUI for visualizing neural electrical behavior. Models user-defined neuron circuit architectures, and supports live waveform rendering and customizable simulation parameters.",
+    github: "https://github.com/raiya-m/brain-spice"
   },
   {
-    title: "BrainWave",
-    tags: ["Python", "EEG", "DataViz"],
-    description: "Visualizes EEG brainwave data using interactive Python dashboards and ML smoothing filters.",
-    github: "https://github.com/yourusername/brainwave"
+    title: "ripple.ai",
+    tags: ["Python", "Flask", "MongoDB", "Hugging Face API", "scikit-learn", "NumPy"],
+    description: "Hack Canada #Build With AI app for Indigenous communities to analyze and compare policies relating to water rights, and generate advocacy documents.",
+    github: "https://github.com/raiya-m/ripple.ai"
   },
   {
-    title: "Budgeteer",
-    tags: ["TypeScript", "MongoDB", "Express"],
-    description: "A full-stack budgeting app with customizable goals, real-time charting, and user auth.",
-    github: "https://github.com/yourusername/budgeteer"
+    title: "Portfolio Website",
+    tags: ["React.js", "Next.js", "Tailwind CSS", "Vite"],
+    description: "My personal website, raiya-minhas.github.io. Built with React.js and styled with Tailwind CSS.",
+    github: "https://github.com/raiya-m/raiya-minhas"
   }
 ];
 
@@ -52,26 +53,27 @@ function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="relative bg-white border border-black p-4 rounded-xl transition-transform hover:scale-[1.01] duration-200 text-black"
+            className="relative bg-white border border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.01] duration-200 text-black"
           >
-            {/* GitHub icon */}
-            <a href={project.github} target="_blank" rel="noopener noreferrer">
-              <img
-                src="/github.png"
-                alt="GitHub"
-                className="absolute top-4 right-4 w-5 h-5 hover:scale-110 transition-transform"
-              />
+            {/* External Link icon */}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-4 right-4 text-black hover:scale-113 transition-transform"
+            >
+              <ExternalLink size={17} strokeWidth={1.5} />
             </a>
 
             {/* Title */}
-            <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
+            <h3 className="text-lg font-semibold mb-2 pr-8 break-words leading-tight">{project.title}</h3>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-3">
               {project.tags.map((tag, tagIdx) => (
                 <span
                   key={tagIdx}
-                  className="bg-gray-200 text-black text-xs px-2 py-[2px] rounded-md hover:scale-105 transition-transform"
+                  className="bg-gray-200 text-black text-xs px-2 py-[2px] rounded-md"
                 >
                   {tag}
                 </span>
@@ -79,7 +81,7 @@ function Projects() {
             </div>
 
             {/* Description */}
-            <p className="text-sm">{project.description}</p>
+            <p className="text-sm text-left">{project.description}</p>
           </div>
         ))}
       </div>

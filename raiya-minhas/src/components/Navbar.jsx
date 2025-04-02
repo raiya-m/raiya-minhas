@@ -72,7 +72,7 @@ export default function Navbar() {
       ))}
 
       {!isScrolled && (
-        <div className="ml-4 flex gap-2 text-black font-medium text-sm">
+        <div className="ml-4 flex gap-2 text-black text-sm">
           {navLinks.map((link, idx) => (
             <a
               key={link.label}
@@ -80,7 +80,7 @@ export default function Navbar() {
               className="hover:underline transition-colors duration-150"
             >
               {link.label}
-              {idx < navLinks.length - 1 && <span className="mx-2">/</span>}
+              {idx < navLinks.length - 1 && <span className="mx-2 font-light">/</span>}
             </a>
           ))}
         </div>

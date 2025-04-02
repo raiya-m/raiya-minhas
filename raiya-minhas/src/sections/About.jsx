@@ -11,8 +11,8 @@ function About() {
 
       <div className="w-[90vw] max-w-2xl mt-4 md:mt-6 text-left text-black font-sans text-[17px] leading-relaxed">
         <p className="mb-4">
-          My name is <span className="font-semibold">Raiya Minhas</span> and I'm an
-          aspiring <span className="font-semibold">software engineer</span>.
+          My name is <span className="font-semibold">Raiya Minhas</span> and I'm in my first year 
+          studying computer engineering at the University of Waterloo.
           I thrive on solving <span className="font-bold">complex problems</span> through curiosity,
           creativity, and collaboration.
         </p>
