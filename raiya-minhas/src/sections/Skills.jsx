@@ -20,7 +20,7 @@ function Skills() {
         </div>
 
         {/* Tag section matches About width */}
-        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-6">
+        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10">
           {technologies.map((tech) => (
             <div key={tech} className="relative inline-flex group overflow-visible">
               {/* Glow background */}

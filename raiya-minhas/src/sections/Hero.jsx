@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { X, Minus, Plus, Folder, ChevronDown } from "lucide-react";
+import { X, Minus, Plus, Folder, ChevronsDown } from "lucide-react";
 
 function Hero() {
   const [showChevron, setShowChevron] = useState(true);
@@ -52,8 +52,8 @@ function Hero() {
 
       {/* Bouncing Chevron (visible only when not scrolled) */}
       {showChevron && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-500 animate-bounce">
-          <ChevronDown size={28} strokeWidth={1.5} />
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
+          <ChevronsDown size={28} strokeWidth={1.5} className="scale-x-130" />
         </div>
       )}
 

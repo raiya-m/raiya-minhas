@@ -6,6 +6,7 @@ import About from "./sections/about";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/projects"
+import Blog from "./sections/blog"
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
       <section id="projects">
         <Projects />
       </section>
+    <section id="blog">
+      <Blog />
+    </section>
     </div>
   );
 }
