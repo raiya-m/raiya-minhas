@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/about";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
+import Projects from "./sections/projects"
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
       </section>
       <section id="skills">
         <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
       </section>
     </div>
   );

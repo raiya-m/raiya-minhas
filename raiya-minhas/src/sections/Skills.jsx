@@ -11,15 +11,16 @@ function Skills() {
 
   return (
     <div
-      id="about"
-      className="min-h-screen px-6 pt-28 sm:pt-20 lg:pt-25 flex flex-col items-center justify-center bg-white"
+      id="skills"
+      className="px-6 pt-16 flex flex-col items-center justify-start bg-white"
     >
       <div className="w-full max-w-4xl px-4 mx-auto">
         <div className="flex justify-center">
-          <Skillsheader />
+          <Skillsheader/>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-3 mt-6">
+        {/* Tag section matches About width */}
+        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-6">
           {technologies.map((tech) => (
             <div key={tech} className="relative inline-flex group overflow-visible">
               {/* Glow background */}

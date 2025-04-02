@@ -5,7 +5,7 @@ function About() {
   return (
     <div
       id="about"
-      className="min-h-screen px-6 pt-28 sm:pt-20 lg:pt-25 flex flex-col items-center justify-center bg-white"
+      className="px-6 pt-16 flex flex-col items-center justify-start bg-white"
     >
       <Aboutheader />
 
