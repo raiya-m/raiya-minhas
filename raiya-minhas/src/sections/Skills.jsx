@@ -4,7 +4,7 @@ import Skillsheader from "../components/Skillsheader";
 function Skills() {
   const technologies = [
     "JavaScript", "TypeScript", "Python", "C", "C++",
-    "SQL", "MATLAB", "HTML", "CSS", "LaTeX", "React.js", "Next.js", "Node.js", "FastAPI", "Flask",
+    "SQL", "MATLAB", "HTML", "CSS", "LaTeX", "React.js", "Next.js", "Node.js", "FastAPI", "Flask", "Django",
     "Tailwind CSS", "NumPy", "pandas", "scikit-learn", "Transformers", "Git", "Docker", "Google Cloud", 
     "MySQL", "PostgreSQL", "MongoDB"
   ];
