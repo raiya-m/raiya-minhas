@@ -11,23 +11,26 @@ import Blog from "./sections/blog"
 function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
-      <section id="hero">
-        <Hero />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-      <section id="projects">
-        <Projects />
-      </section>
+  <Navbar />
+  <div className="flex flex-col items-center justify-center">
+    <section id="hero">
+      <Hero />
+    </section>
+    <section id="about">
+      <About />
+    </section>
+    <section id="skills">
+      <Skills />
+    </section>
+    <section id="projects">
+      <Projects />
+    </section>
     <section id="blog">
       <Blog />
     </section>
-    </div>
+  </div>
+</div>
+
   );
 }
 

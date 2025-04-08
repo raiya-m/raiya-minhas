@@ -9,7 +9,7 @@ function About() {
     >
       <Aboutheader />
 
-      <div className="w-[90vw] max-w-2xl mt-4 md:mt-6 text-left text-black font-sans text-[17px] leading-relaxed bg-white">
+      <div className="w-[90vw] max-w-2xl mt-4 md:mt-6 px-3 sm:mt-4 text-left text-black font-sans text-[17px] leading-relaxed bg-white">
         <p className="mb-4">
           My name is <span className="font-semibold">Raiya Minhas</span> and I'm in my first year 
           studying computer engineering at the University of Waterloo.
