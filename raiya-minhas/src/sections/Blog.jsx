@@ -9,7 +9,7 @@ function Blog() {
     >
       <Blogheader />
 
-      <div className="w-[90vw] max-w-2xl mt-4 md:mt-6 text-left text-black font-sans text-[17px] bg-white leading-relaxed">
+      <div className="w-full max-w-[95vw] sm:max-w-2xl mt-4 md:mt-6 px-2 sm:px-0 text-left text-black font-sans text-[17px] leading-relaxed bg-white">
         <p className="mb-4">
           RAIYA
         </p>

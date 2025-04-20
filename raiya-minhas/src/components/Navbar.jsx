@@ -9,7 +9,7 @@ const icons = [
       <img
         src="github.png"
         alt="GitHub"
-        className="w-[20px] h-[20px] object-contain"
+        className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain"
       />
     ),
     href: "https://github.com/raiya-m",
@@ -20,7 +20,7 @@ const icons = [
       <img
         src="linkedin.png"
         alt="LinkedIn"
-        className="w-[20px] h-[20px] object-contain"
+        className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain"
       />
     ),
     href: "https://www.linkedin.com/in/raiyaminhas",
@@ -49,7 +49,7 @@ export default function Navbar() {
   return (
     <div
       className={`fixed z-50 transition-[top,left,transform] duration-300 ease-in-out
-        bg-gradient-to-b from-orange-200 via-pink-300 to-blue-300
+        bg-gradient-to-b from-sky-100 via-indigo-200 to-violet-200
         shadow-xl
         ${
           isScrolled

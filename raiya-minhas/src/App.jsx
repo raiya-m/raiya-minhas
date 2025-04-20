@@ -7,6 +7,7 @@ import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/projects"
 import Blog from "./sections/blog"
+import Footer from "./sections/Footer"
 
 function App() {
   return (
@@ -25,9 +26,7 @@ function App() {
     <section id="projects">
       <Projects />
     </section>
-    <section id="blog">
-      <Blog />
-    </section>
+    <Footer />
   </div>
 </div>
 

@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: "Brain SPICE",
-    tags: ["Python", "Ngspice", "Tkinter", "Matplotlib", "Numpy", "pandas"],
+    tags: ["Python", "Ngspice", "Tkinter", "Matplotlib", "NumPy", "pandas"],
     description: "Real-time circuit simulator with an interactive GUI for visualizing neural electrical behavior. Models user-defined neuron circuit architectures, and supports live waveform rendering and customizable simulation parameters.",
     github: "https://github.com/raiya-m/brain-spice"
   },
@@ -53,14 +53,14 @@ function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="relative bg-white border border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.01] duration-200 text-black"
+            className="relative bg-white border border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.025] duration-200 text-black"
           >
             {/* External Link icon */}
             <a
               href={project.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="absolute top-4 right-4 text-black hover:scale-113 transition-transform"
+              className="absolute top-4 right-4 text-black hover:scale-115 transition-transform"
             >
               <ExternalLink size={17} strokeWidth={1.5} />
             </a>

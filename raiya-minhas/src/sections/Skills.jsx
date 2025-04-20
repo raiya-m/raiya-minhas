@@ -16,22 +16,14 @@ function Skills() {
     >
       <div className="w-full max-w-4xl px-4 mx-auto">
         <div className="flex justify-center">
-          <Skillsheader/>
+          <Skillsheader />
         </div>
 
         {/* Tag section matches About width */}
-        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10">
+        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10 pb-10 overflow-visible">
           {technologies.map((tech) => (
-            <div key={tech} className="relative inline-flex group overflow-visible">
-              {/* Glow background */}
-              <div
-                className="absolute -inset-2 rounded-md z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-md pointer-events-none"
-                style={{
-                  background: 'linear-gradient(to bottom, #fb923c, #f472b6, #c084fc, #60a5fa)',
-                }}
-              />
-              {/* Tag content */}
-              <div className="relative z-10 px-3 py-1 bg-gray-100 text-black rounded-md text-sm font-medium transition-transform duration-200 group-hover:scale-[1.02]">
+            <div key={tech} className="group">
+              <div className="px-3 py-1 bg-gray-100 text-black rounded-md text-sm font-medium transition duration-200 group-hover:shadow-[0_0_16px_6px_rgba(165,180,252,0.75)]">
                 {tech}
               </div>
             </div>
@@ -43,3 +35,4 @@ function Skills() {
 }
 
 export default Skills;
+
