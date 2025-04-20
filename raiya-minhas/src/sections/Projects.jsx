@@ -55,18 +55,22 @@ function Projects() {
             key={idx}
             className="relative bg-white border border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.025] duration-200 text-black"
           >
-            {/* External Link icon */}
-            <a
-              href={project.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute top-4 right-4 text-black hover:scale-115 transition-transform"
-            >
-              <ExternalLink size={17} strokeWidth={1.5} />
-            </a>
+            {/* External Link icon — hidden for Heatstroke Detection Wearable */}
+            {project.title !== "Heatstroke Detection Wearable" && project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute top-4 right-4 text-black hover:scale-115 transition-transform"
+              >
+                <ExternalLink size={17} strokeWidth={1.5} />
+              </a>
+            )}
 
             {/* Title */}
-            <h3 className="text-lg font-semibold mb-2 pr-8 break-words leading-tight">{project.title}</h3>
+            <h3 className="text-lg font-semibold mb-2 pr-8 break-words leading-tight">
+              {project.title}
+            </h3>
 
             {/* Tags */}
             <div className="flex flex-wrap gap-2 mb-3">

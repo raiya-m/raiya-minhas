@@ -12,24 +12,23 @@ import Footer from "./sections/Footer"
 function App() {
   return (
     <div className="min-h-screen bg-white">
-  <Navbar />
-  <div className="flex flex-col items-center justify-center">
-    <section id="hero">
-      <Hero />
-    </section>
-    <section id="about">
-      <About />
-    </section>
-    <section id="skills">
-      <Skills />
-    </section>
-    <section id="projects">
-      <Projects />
-    </section>
-    <Footer />
+    <Navbar />
+    <div className="flex flex-col items-center justify-center">
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="skills">
+        <Skills />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <Footer />
+    </div>
   </div>
-</div>
-
   );
 }
 
