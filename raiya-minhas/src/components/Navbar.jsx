@@ -29,10 +29,10 @@ const icons = [
 ];
 
 const navLinks = [
-  { label: "about", href: "#about" },
-  { label: "skills", href: "#skills" },
-  { label: "projects", href: "#projects" },
-  { label: "blog", href: "#blog" },
+  { label: " about  ", href: "#about" },
+  { label: " skills  ", href: "#skills" },
+  { label: " projects  ", href: "#projects" },
+  { label: " blog", href: "#blog" },
 ];
 
 export default function Navbar() {

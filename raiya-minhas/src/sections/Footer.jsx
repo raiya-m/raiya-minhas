@@ -8,8 +8,8 @@ function Footer() {
         <div className="border-t border-gray-300 w-full" />
 
         {/* Footer text */}
-        <div className="text-center text-sm text-gray-500 mt-4 mb-10">
-        2025. Designed and built by Raiya Minhas. All bugs are features :)
+        <div className="text-center text-sm text-gray-500 mt-4 mb-8">
+        {"2025. Designed and built by Raiya Minhas. All bugs are features :)"}
         </div>
       </div>
     </footer>

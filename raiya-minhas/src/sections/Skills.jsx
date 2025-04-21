@@ -20,7 +20,7 @@ function Skills() {
         </div>
 
         {/* Tag section matches About width */}
-        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10 pb-10 overflow-visible">
+        <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10 pb-4 overflow-visible">
           {technologies.map((tech) => (
             <div key={tech} className="group">
               <div className="px-3 py-1 bg-gray-100 text-black rounded-md text-sm font-medium transition duration-200 group-hover:shadow-[0_0_16px_6px_rgba(165,180,252,0.75)]">
