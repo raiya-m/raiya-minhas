@@ -53,7 +53,7 @@ function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            className="relative bg-white border border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.025] duration-200 text-black"
+            className="relative bg-white border-[1.25px] border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.025] duration-200 text-black"
           >
             {/* External Link icon — hidden for Heatstroke Detection Wearable */}
             {project.title !== "Heatstroke Detection Wearable" && project.github && (
@@ -68,7 +68,7 @@ function Projects() {
             )}
 
             {/* Title */}
-            <h3 className="text-lg font-semibold mb-2 pr-8 break-words leading-tight">
+            <h3 className="text-[17px] semibold-light mb-2 pr-8 break-words leading-tight">
               {project.title}
             </h3>
 
@@ -77,7 +77,7 @@ function Projects() {
               {project.tags.map((tag, tagIdx) => (
                 <span
                   key={tagIdx}
-                  className="bg-gray-200 text-black text-xs px-2 py-[2px] rounded-md"
+                  className="bg-[#ebedf2] text-black text-xs px-2 py-[2px] rounded-md"
                 >
                   {tag}
                 </span>

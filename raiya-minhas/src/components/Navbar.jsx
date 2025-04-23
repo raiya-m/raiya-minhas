@@ -3,13 +3,13 @@ import { Home, Send } from "lucide-react";
 
 const icons = [
   { icon: <Home className="h-[20px] w-[20px]" strokeWidth={1.75} />, href: "#hero" },
-  { icon: <Send className="h-[20px] w-[20px]" strokeWidth={1.75} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
+  { icon: <Send className="h-[20px] w-[20px] mr-[0.9px]" strokeWidth={1.75} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
   {
     icon: (
       <img
         src="github.png"
         alt="GitHub"
-        className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain"
+        className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain mr-[0.8px]"
       />
     ),
     href: "https://github.com/raiya-m",
@@ -29,10 +29,9 @@ const icons = [
 ];
 
 const navLinks = [
-  { label: " about  ", href: "#about" },
-  { label: " skills  ", href: "#skills" },
-  { label: " projects  ", href: "#projects" },
-  { label: " blog", href: "#blog" },
+  { label: "about", href: "#about" },
+  { label: "skills", href: "#skills" },
+  { label: "projects", href: "#projects" }
 ];
 
 export default function Navbar() {
@@ -58,14 +57,14 @@ export default function Navbar() {
         }`}
     >
       {/* Icon links */}
-      <div className={`flex ${isScrolled ? "flex-col" : "flex-row"} items-center gap-2`}>
+      <div className={`flex ${isScrolled ? "flex-col" : "flex-row"} items-center gap-4`}>
         {icons.map((item, idx) => (
           <a
             key={idx}
             href={item.href}
             target={item.external ? "_blank" : undefined}
             rel={item.external ? "noopener noreferrer" : undefined}
-            className="flex items-center justify-center p-1 rounded-full transition-transform duration-150 hover:scale-110 hover:bg-white/20"
+            className="flex items-center justify-center p-1 rounded-full transition-transform duration-150 hover:scale-115 hover:bg-white/20"
           >
             <div className="text-black">{item.icon}</div>
           </a>
@@ -76,14 +75,17 @@ export default function Navbar() {
       {!isScrolled && (
         <div className="flex items-center gap-1 ml-3 text-black text-sm whitespace-nowrap">
           {navLinks.map((link, idx) => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="hover:underline transition-colors duration-150"
-            >
-              {link.label}
-              {idx < navLinks.length - 1 && <span className="mx-1 font-light">/</span>}
-            </a>
+            <div key={link.label} className="flex items-center">
+              <a
+                href={link.href}
+                className="hover:scale-106 transition-transform duration-100"
+              >
+                {link.label}
+              </a>
+              {idx < navLinks.length - 1 && (
+                <span className="mx-1 font-extralight">/</span>
+              )}
+            </div>
           ))}
         </div>
       )}

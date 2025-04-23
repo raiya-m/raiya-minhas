@@ -5,24 +5,39 @@ function About() {
   return (
     <div
       id="about"
-      className="px-1 sm:px-2 md:px-4 pt-16 flex flex-col items-center justify-start bg-white"
-
+      className="px-1 sm:px-2 md:px-4 pt-16 flex flex-col items-center justify-start bg-white font-dm"
     >
       <Aboutheader />
+      <br />
 
-      <div className="w-full max-w-[95vw] sm:max-w-2xl mt-4 md:mt-6 px-2 sm:px-0 text-left text-black font-sans text-[17px] leading-relaxed bg-white">
-        <p className="mb-4 font-touche">
-          My name is <span className="font-semibold">Raiya Minhas</span> and I'm in my first year 
+      <div className="w-full max-w-[95vw] sm:max-w-2xl bg-white/80 backdrop-blur-md border-[1px] border-black rounded-md shadow-sm overflow-hidden font-mono text-sm text-left mb-6">
+        <div className="bg-gradient-to-r from-gray-50 via-[#dce0e6] to-gray-50  px-3 py-1 text-xs text-gray-600 border-b-[1px] border-black">
+          config.js
+        </div>
+        <pre className="p-4 text-gray-800">
+          <code>
+            {`raiya.config({
+  pipeline: ["learn", "build", "refactor", "optimize", "evolve"],
+  mode: "adaptable",
+  strategy: "analytical"
+})`}
+          </code>
+        </pre>
+      </div>
+
+      <div className="w-full max-w-[95vw] sm:max-w-2xl px-4 py-6 sm:px-6 text-left text-black text-[16px] leading-normal bg-white border border-gray-300 rounded-lg relative">
+        <p className="mb-4">
+          My name is <span className="font-semibold"> Raiya Minhas </span> and I'm in my first year of
           studying computer engineering at the University of Waterloo.
-          I thrive on solving <span className="font-bold">complex problems</span> through curiosity,
+          I thrive on solving <span className="font-semibold"> complex problems </span> through curiosity,
           creativity, and collaboration.
         </p>
-        <p>
-          I'm passionate about leveraging technology to solve
-          <span className="font-semibold"> real-world challenges</span>. I'm drawn to how systems work, and the way small 
-          components interconnect to build something meaningful: whether in code, design, or
-           the world around us. <br /><br />
-          I love full stack development, robotics, human-centered design,
+        <p> 
+          I'm passionate about leveraging <span className="font-semibold"> technology </span> to solve
+          <span className="font-semibold"> real-world challenges</span>. I'm drawn to how systems work, and the way  
+          components interact and connect to build something meaningful: whether in code, design, or
+          the world around us. <br /><br />
+          I love full-stack development, robotics, human-centered design,
           fractal geometry, and geography trivia.
         </p>
       </div>

@@ -23,7 +23,7 @@ function Skills() {
         <div className="w-[90vw] max-w-2xl mx-auto flex flex-wrap justify-start gap-3 mt-10 pb-4 overflow-visible">
           {technologies.map((tech) => (
             <div key={tech} className="group">
-              <div className="px-3 py-1 bg-gray-100 text-black rounded-md text-sm font-medium transition duration-200 group-hover:shadow-[0_0_16px_6px_rgba(165,180,252,0.75)]">
+              <div className="px-3 py-1 bg-gradient-to-r from-gray-50 via-gray-100 to-gray-200 text-black border-[1px] border-gray-300 rounded-md text-sm font-medium transition duration-200 group-hover:shadow-[0_0_16px_6px_rgba(165,180,252,0.75)]">
                 {tech}
               </div>
             </div>

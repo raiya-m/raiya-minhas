@@ -6,7 +6,6 @@ import About from "./sections/about";
 import Hero from "./sections/Hero";
 import Skills from "./sections/Skills";
 import Projects from "./sections/projects"
-import Blog from "./sections/blog"
 import Footer from "./sections/Footer"
 
 function App() {

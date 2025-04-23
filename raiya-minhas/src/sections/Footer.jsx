@@ -9,7 +9,7 @@ function Footer() {
 
         {/* Footer text */}
         <div className="text-center text-sm text-gray-500 mt-4 mb-8">
-        {"2025. Designed and built by Raiya Minhas. All bugs are features :)"}
+        {"2025. Raiya Minhas. Compiled with ♥ and .jsx"}
         </div>
       </div>
     </footer>
