@@ -73,7 +73,7 @@ export default function Navbar() {
 
       {/* Text nav links */}
       {!isScrolled && (
-        <div className="flex items-center gap-1 ml-3 text-black text-sm whitespace-nowrap">
+        <div className="flex items-center gap-1 ml-3 text-black text-sm whitespace-nowrap text-[14px]">
           {navLinks.map((link, idx) => (
             <div key={link.label} className="flex items-center">
               <a

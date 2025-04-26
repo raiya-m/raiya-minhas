@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-full mt-20 px-6">
+    <footer className="w-full mt-20 px-6 overflow-x-hidden">
       <div className="w-[90vw] max-w-2xl mx-auto">
         {/* Divider line */}
         <div className="border-t border-gray-300 w-full" />

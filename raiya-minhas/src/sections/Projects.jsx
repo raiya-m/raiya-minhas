@@ -45,7 +45,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="px-6 pt-16 flex flex-col items-center justify-start bg-white"
+      className="px-6 pt-16 flex flex-col items-center justify-start bg-white overflow-x-hidden"
     >
       <Projectsheader />
 

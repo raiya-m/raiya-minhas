@@ -20,7 +20,7 @@ function Hero() {
 > Computer Engineering @ University of Waterloo`;
 
   return (
-    <div className="h-screen flex items-center justify-center relative">
+    <div className="h-screen flex items-center justify-center relative overflow-x-hidden">
       {/* Terminal Window */}
       <div className="w-[90vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
         {/* Top Bar */}
