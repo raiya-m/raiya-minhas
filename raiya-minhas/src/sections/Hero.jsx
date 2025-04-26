@@ -20,9 +20,9 @@ function Hero() {
 > Computer Engineering @ University of Waterloo`;
 
   return (
-    <div className="h-screen flex items-center justify-center relative overflow-x-hidden">
+    <div className="h-screen flex flex-col items-start sm:items-center justify-start sm:justify-center relative overflow-x-hidden pt-48 sm:pt-0">
       {/* Terminal Window */}
-      <div className="w-[90vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
+      <div className="w-[80vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
         {/* Top Bar */}
         <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-sky-100 via-indigo-200 to-violet-200 border-b border-black">
           <div className="flex space-x-2 items-center">
@@ -46,22 +46,19 @@ function Hero() {
         </div>
 
         {/* Terminal Content */}
-        <div className="px-6 py-4 font-mono text-black text-sm whitespace-pre-wrap text-left">
-          <pre>
-            <code>{terminalOutput}</code>
-          </pre>
+        <div className="px-6 py-4 font-mono text-black text-sm whitespace-pre-wrap text-left break-words">
+          <code>{terminalOutput}</code>
         </div>
       </div>
 
       {/* Bouncing Chevron */}
-      {showChevron && (
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
-          <ChevronsDown size={28} strokeWidth={1.5} className="scale-x-130" />
-        </div>
-      )}
+        {showChevron && (
+          <div className="absolute bottom-40 sm:bottom-15 md:bottom-24 lg:bottom-16 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
+            <ChevronsDown size={28} strokeWidth={1.5} className="scale-x-130" />
+          </div>
+        )}
     </div>
   );
 }
 
 export default Hero;
-

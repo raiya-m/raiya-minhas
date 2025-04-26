@@ -45,11 +45,11 @@ function Projects() {
   return (
     <div
       id="projects"
-      className="px-6 pt-16 flex flex-col items-center justify-start bg-white overflow-x-hidden"
+      className="px-6 sm:px-0 md:px-3 pt-16 pb-5 flex flex-col items-center justify-start bg-white overflow-x-hidden"
     >
       <Projectsheader />
 
-      <div className="w-[90vw] max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+      <div className="w-[80vw] max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
         {projects.map((project, idx) => (
           <div
             key={idx}
