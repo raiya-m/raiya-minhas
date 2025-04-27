@@ -24,26 +24,31 @@ function Hero() {
       {/* Terminal Window */}
       <div className="w-[80vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
         
-        {/* Top Bar */}
-        <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-sky-100 via-indigo-200 to-violet-200 border-b-[1px] border-black">
-          <div className="flex space-x-2 items-center">
-            <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
-              <X size={10} strokeWidth={3} className="text-black" />
+        {/* Top Bar with Proper Border */}
+        <div className="relative">
+          <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-sky-100 via-indigo-200 to-violet-200">
+            <div className="flex space-x-2 items-center">
+              <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
+                <X size={10} strokeWidth={3} className="text-black" />
+              </div>
+              <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
+                <Minus size={10} strokeWidth={3} className="text-black" />
+              </div>
+              <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
+                <Plus size={10} strokeWidth={3} className="text-black" />
+              </div>
             </div>
-            <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
-              <Minus size={10} strokeWidth={3} className="text-black" />
+
+            <div className="flex items-center space-x-2 text-black text-sm font-medium leading-tight">
+              <Folder size={15} className="stroke-black align-middle" />
+              <span className="align-middle">raiya-minhas</span>
             </div>
-            <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
-              <Plus size={10} strokeWidth={3} className="text-black" />
-            </div>
+
+            <div className="w-3" />
           </div>
 
-          <div className="flex items-center space-x-2 text-black text-sm font-medium leading-tight">
-            <Folder size={15} className="stroke-black align-middle" />
-            <span className="align-middle">raiya-minhas</span>
-          </div>
-
-          <div className="w-3" />
+          {/* This is the solid black line below top bar */}
+          <div className="absolute bottom-0 left-0 w-full h-[1px] bg-black" />
         </div>
 
         {/* Terminal Content */}
