@@ -23,8 +23,9 @@ function Hero() {
     <div className="h-screen flex flex-col items-start sm:items-center justify-start sm:justify-center relative overflow-x-hidden pt-48 sm:pt-0">
       {/* Terminal Window */}
       <div className="w-[80vw] max-w-2xl rounded-md shadow-lg border border-black bg-white">
+        
         {/* Top Bar */}
-        <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-sky-100 via-indigo-200 to-violet-200 border-b border-black">
+        <div className="flex items-center justify-between px-4 py-2 rounded-t-md bg-gradient-to-r from-sky-100 via-indigo-200 to-violet-200 border-b-[1px] border-black">
           <div className="flex space-x-2 items-center">
             <div className="w-4 h-4 rounded-full bg-white border border-black flex items-center justify-center">
               <X size={10} strokeWidth={3} className="text-black" />
@@ -52,11 +53,11 @@ function Hero() {
       </div>
 
       {/* Bouncing Chevron */}
-        {showChevron && (
-          <div className="absolute bottom-40 sm:bottom-15 md:bottom-24 lg:bottom-16 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
-            <ChevronsDown size={28} strokeWidth={1.5} className="scale-x-130" />
-          </div>
-        )}
+      {showChevron && (
+        <div className="absolute bottom-40 sm:bottom-15 md:bottom-28 lg:bottom-16 left-1/2 -translate-x-1/2 text-gray-400 animate-bounce">
+          <ChevronsDown size={28} strokeWidth={1.5} className="scale-x-130" />
+        </div>
+      )}
     </div>
   );
 }

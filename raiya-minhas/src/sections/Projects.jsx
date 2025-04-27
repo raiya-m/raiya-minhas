@@ -35,8 +35,8 @@ const projects = [
   },
   {
     title: "Portfolio Website",
-    tags: ["React.js", "Next.js", "Tailwind CSS", "Vite"],
-    description: "My personal website, raiya-minhas.github.io. Built with React.js and styled with Tailwind CSS.",
+    tags: ["React.js", "Tailwind CSS", "Framer Motion"],
+    description: "My personal website. Built with React.js and styled with Tailwind CSS.",
     github: "https://github.com/raiya-m/raiya-minhas"
   }
 ];
@@ -55,7 +55,6 @@ function Projects() {
             key={idx}
             className="relative bg-white border-[1.25px] border-black shadow-sm p-4 rounded-xl transition-transform hover:scale-[1.025] duration-200 text-black"
           >
-            {/* External Link icon — hidden for Heatstroke Detection Wearable */}
             {project.title !== "Heatstroke Detection Wearable" && project.github && (
               <a
                 href={project.github}
