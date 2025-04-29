@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Home, Send } from "lucide-react";
 
 const icons = [
-  { icon: <Home className="h-[20px] w-[20px]" strokeWidth={1.75} />, href: "#hero" },
+  { icon: <Home className="h-[20px] w-[20px]" strokeWidth={1.75} />, href: "#home" },
   { icon: <Send className="h-[20px] w-[20px] mr-[0.9px]" strokeWidth={1.75} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
   {
     icon: (
       <img
-        src="github.png"
+        src="/raiya-minhas/github-2.png"
         alt="GitHub"
         className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain mr-[0.8px]"
       />
@@ -18,7 +18,7 @@ const icons = [
   {
     icon: (
       <img
-        src="linkedin.png"
+        src="/raiya-minhas/linkedin-2.png"
         alt="LinkedIn"
         className="w-[20px] h-[20px] min-w-[20px] min-h-[20px] object-contain"
       />

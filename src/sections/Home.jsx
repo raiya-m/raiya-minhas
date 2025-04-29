@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { X, Minus, Plus, Folder, ChevronsDown } from "lucide-react";
 
-function Hero() {
+function Home() {
   const [showChevron, setShowChevron] = useState(true);
 
   useEffect(() => {
@@ -67,4 +67,4 @@ function Hero() {
   );
 }
 
-export default Hero;
+export default Home;
