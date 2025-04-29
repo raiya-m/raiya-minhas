@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/raiya-minhas/', // github pages
   plugins: [react(), tailwindcss()],
+  base: "/raiya-minhas"
 })
