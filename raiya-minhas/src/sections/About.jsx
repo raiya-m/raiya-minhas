@@ -28,7 +28,7 @@ function About() {
       {/* First Box — About Raiya */}
       <div className="w-[80vw] max-w-2xl px-4 py-6 sm:px-6 text-left text-black text-[16px] leading-normal bg-white border border-gray-300 rounded-lg relative mb-6">
         <p className="mb-4">
-          My name is <span className="font-semibold">Raiya Minhas</span> and I'm in my first year of
+          My name is <span className="font-semibold">Raiya Minhas</span> and I'm
           studying computer engineering at the University of Waterloo.
           I thrive on solving <span className="font-semibold">complex problems</span> through curiosity,
           creativity, and collaboration.
@@ -52,7 +52,7 @@ function About() {
           <ul className="list-disc list-outside pl-5">
             <li className="ml-2 text-[15px] leading-snug">Designing scalable, concurrent backend architectures</li>
             <li className="ml-2 text-[15px] leading-snug">Rapid prototyping and iterative development for high-impact product experiences</li>
-            <li className="ml-2 text-[15px] leading-snug">Working with colour and layout to make frontend bugs look like intentional design choices</li>
+            <li className="ml-2 text-[15px] leading-snug">Experimenting with colour and layout to make frontend bugs look like intentional design choices :)</li>
           </ul>
         </div>
 
@@ -66,10 +66,10 @@ function About() {
         </div>
 
         <div>
-          <p className="font-semibold mb-2">Listening:</p>
+          <p className="font-semibold mb-2">Listening To:</p>
           <ul className="list-disc list-outside pl-5">
             <li className="ml-2 text-[15px] leading-snug">Hard Fork</li>
-            <li className="ml-2 text-[15px] leading-snug">Darknet Diaries</li>
+            <li className="ml-2 text-[15px] leading-snug">Product Thinking</li>
             <li className="ml-2 text-[15px] leading-snug">Taylor Swift piano covers</li>
           </ul>
         </div>
