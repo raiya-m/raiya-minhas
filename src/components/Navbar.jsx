@@ -6,8 +6,8 @@ import LinkedInIcon from "./LinkedInIcon";
 const icons = [
   { icon: <Home className="h-[20px] w-[20px]" strokeWidth={1.75} />, href: "#home" },
   { icon: <Send className="h-[20px] w-[20px] mr-[0.9px]" strokeWidth={1.75} />, href: "mailto:raiya.minhas@uwaterloo.ca" },
-  // { icon: <GitHubIcon />, href: "https://github.com/raiya-m", external: true },
-  // { icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/raiyaminhas", external: true },
+  { icon: <GitHubIcon />, href: "https://github.com/raiya-m", external: true },
+  { icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/raiya-minhas", external: true },
 ];
 
 const navLinks = [
